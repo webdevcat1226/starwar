@@ -1,0 +1,59 @@
+.app-container {
+  background: url("assets/images/bg.jpg");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .winner-announcer {
+    margin: 70px 0;
+  }
+
+  .game-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    height: 500px;
+
+    .player-info-container {
+      position: relative;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 150px;
+
+      & > div {
+        display: flex;
+      }
+
+      button {
+        color: white;
+        font-size: 20px;
+        border: none;
+        background: #10aeb1;
+        border-radius: 5px;
+        padding: 10px;
+        width: 150px;
+        margin: 20px;
+
+        &:focus {
+          border: none;
+          text-decoration: none;
+          outline: none;
+        }
+
+        &:hover {
+          border: 1px solid green;
+          background: #10ceb1;
+        }
+      }
+    }
+  }
+
+}
+
+
+
